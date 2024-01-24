@@ -11,7 +11,7 @@
 .nft {
     color: #000;
     font-family: 'Poppins', sans-serif;
-    font-size: 45px;
+    font-size: 36px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -48,9 +48,33 @@
     padding: 8px 24px;
 }
 
+.toggler {
+    height: 23px;
+    width: 40px;
+    border-radius: 42px;
+    background-color: #f0f0f0;
+    border: 1px solid #c0c0c0;
+    /* position: relative; */
+    display: flex;
+}
+
+.toggler .button {
+    width: 20px;
+    background-color: #000;
+    border-radius: 50%;
+    transition: all 20ms linear;
+    /* position: absolute; */
+    /* top: 0; */
+}
+
+#toggle:checked~label.toggler {
+    justify-content: end;
+}
+
 .nav-bg-shadow {
     background: #FFF;
     box-shadow: 0px 4px 35px 0px rgba(0, 0, 0, 0.08);
+    padding: 5px 0;
 }
 
 .jhone-doe {
@@ -60,6 +84,13 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 .bg-color {
@@ -82,6 +113,10 @@
     width: 889px;
     height: 476px;
     flex-shrink: 0;
+}
+
+.padding-top {
+    padding-top: 70px;
 }
 
 .post {
@@ -267,6 +302,23 @@ label[for="Most Liked"] {
     .follow {
         font-size: 12px;
     }
+
+}
+
+@media(min-width:320px) and (max-width:576px) {
+    .image-width {
+        width: 30%;
+    }
+
+    .image-width-1 {
+        width: 35%;
+    }
+
+    .nft {
+        font-size: 16px;
+    }
+
+
 
 }
 
